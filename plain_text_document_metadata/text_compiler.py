@@ -7,7 +7,7 @@ from openpyxl.utils import get_column_letter
 from PIL import Image
 
 # Path to the folder containing the docs
-doc_folder = "/Users/agraziano/Desktop/metadata_raster_script/Final_script/plain_text"
+doc_folder = ""
 
 # Path to the metadata text file
 metadata_file_path = os.path.join(doc_folder, "metadata.txt")
@@ -19,7 +19,7 @@ for filename in os.listdir(doc_folder):
         document_filenames.append(filename)
 
 # Name of the organisation
-organisation = "Museum of London Archaeology"
+organisation = ""
 
 # Read metadata from the text file and associate with filenames
 metadata_text = {}
