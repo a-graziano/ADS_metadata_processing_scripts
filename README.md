@@ -6,7 +6,7 @@ This repository contains a collection of Python scripts for processing metadata 
 
 ### First Step
 
-- **File**: [spreadsheet_extractor.py](spreadsheet_extractor.py)
+- **File**: [spreadsheet_extractor.py](spreadsheet_metadata)
 - **Description**: This script extracts metadata from Excel spreadsheets, including title, description, creator, copyright holder, dates, language, and sheet names. It writes the metadata to a text file and also extracts header names to a separate text file.
 
 ### Second Step
