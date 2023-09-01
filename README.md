@@ -1,4 +1,4 @@
-# Metadata Processing Scripts
+# ADS Metadata Processing Scripts
 
 This repository contains a collection of Python scripts for processing metadata from various sources, including Excel spreadsheets, plain text documents, shapefiles, and web scraping.
 
