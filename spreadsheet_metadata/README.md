@@ -6,10 +6,9 @@
 - [Usage](#usage)
 - [Script Explanation](#script-explanation)
 - [Example Output](#example-output)
-- [Compiler](#spreadsheet_compiler.py)
-- [Usage](#usage)
+- [Configuration](#configuration)
 
-The [spreadsheet_extractor script](spreadsheet_extractor.py) is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.
+The [spreadsheet_extractor script](spreadsheet_extractor.py) is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.<br>
 The [spreadsheet_compiler script](spreadhseet_compiler.py) is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
 
 ### Prerequisites
@@ -21,7 +20,6 @@ pip install openpyxl
 ```
 
 ## Getting Started
-### [spreadsheet_extractor.py](spreadsheet_extractor.py)
 
 ### Usage
 1. Clone the repository or download the script files to your local machine.
@@ -66,27 +64,15 @@ Sheet Name: Data</br>
 Number of rows: 50</br>
 </br>
 
-
-
-### [spreadsheet_compiler.py](spreadsheet_compiler.py)
-
-This Python script is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
-
-## Usage
-
-1. Install the required Python libraries using the following command:
-
- ```bash
- pip install openpyxl
- ``` 
+### Configuration
 #### Modify the script's configuration to suit your needs:
 
-2. Set the doc_folder variable to the path of the folder containing the spreadsheets you want to generate metadata for.
-3. Set the metadata_file_path variable to the path of the metadata text file.
-4. Adjust the organization name by changing the organisation variable.
-5. Run the script:
+1. Set the doc_folder variable to the path of the folder containing the spreadsheets you want to generate metadata for.
+2. Set the metadata_file_path variable to the path of the metadata text file.
+3. Adjust the organization name by changing the organisation variable.
+4. Run the script:
 
 ```bash
-python script_name.py
+python spreadsheet_compiler.py
 ```
 The script will generate an Excel file named spreadsheet_metadata.xlsx in the same folder as the script, containing the metadata for the documents.
