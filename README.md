@@ -30,24 +30,24 @@ This repository contains a collection of Python scripts for processing metadata 
 
 ### First Step
 
-- **File**: [gis_extractor.py](gis_extractor.py)
+- **File**: [gis_extractor.py](gis_metadata)
 - **Description**: This script processes metadata from GIS shapefiles, including attribute data and general information. It creates separate attribute tables for each shapefile and compiles general metadata into a text file.
 
 ### Second Step
 
-- **File**: [gis_compiler.py](gis_compiler.py)
+- **File**: [gis_compiler.py](gis_metadata)
 - **Description**: This script reads the general metadata text file generated in the first step and organises it into an Excel workbook. It includes styling for column headers and merges cells for better organisation.
 
 ## Raster Metadata
 
 ### First Step
 
-- **File**: [raster_metatadata.txt](raster_metadata.txt)
+- **File**: [raster_metatadata.txt](raster_metadata)
 - **Description**: This text file contains all the general information relating to the raster files(.jpg, .png, .tiff) which will then be extracted and inserted into a spreadsheet after performing the next step.
 
 ### Second Step
 
-- **File**: [raster_compiler.py](raster_compiler.py)
+- **File**: [raster_compiler.py](raster_metadata)
 - **Description**: This script processes metadata from photos and DWG drawings, extracts information such as filenames, captions, keywords, periods, creators, and more. It creates an Excel workbook with organised metadata and applies styling to the column headers. To create the metadata file, it also uses the information relating to each individual file which is contained in another spreadsheet. Usually this is the File Name and Caption.
 
 
