@@ -6,7 +6,7 @@
 - [Usage](#usage)
 - [Script Explanation](#script-explanation)
 - [Example Output](#example-output)
-- [Compiler](#spreadsheet_compiler)
+- [Compiler](#spreadsheet_compiler.py)
 - [Usage](#usage)
 
 The first Python script is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.
