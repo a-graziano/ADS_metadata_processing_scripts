@@ -53,7 +53,7 @@ This repository contains a collection of Python scripts for processing metadata 
 
 ## Projects Scraping (Additional Script)
 
-- **File**: [projects_scraping.py](projects_scraping.py)
+- **File**: [projects_scraping.py](projects_scraping)
 - **Description**: This script demonstrates how to scrape project information from web pages using Python. It specifically targets the project information of a specific organisation from the Archaeology Data Service website. It uses the `requests` library to send HTTP GET requests to URLs of various organisations on the Archaeology Data Service website, extracts organisation names and project titles using `BeautifulSoup`, stores the data in a pandas DataFrame, and exports it to an Excel file.
 
 ### Usage
