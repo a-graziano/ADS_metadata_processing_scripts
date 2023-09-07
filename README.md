@@ -51,7 +51,7 @@ This repository contains a collection of Python scripts for processing metadata 
 - **Description**: This script processes metadata from photos and DWG drawings, extracts information such as filenames, captions, keywords, periods, creators, and more. It creates an Excel workbook with organised metadata and applies styling to the column headers. To create the metadata file, it also uses the information relating to each individual file which is contained in another spreadsheet. Usually this is the File Name and Caption.
 
 
-## Web Scraping Script (Additional Script)
+## Projects Scraping (Additional Script)
 
 - **File**: [projects_scraping.py](projects_scraping.py)
 - **Description**: This script demonstrates how to scrape project information from web pages using Python. It specifically targets the project information of a specific organisation from the Archaeology Data Service website. It uses the `requests` library to send HTTP GET requests to URLs of various organisations on the Archaeology Data Service website, extracts organisation names and project titles using `BeautifulSoup`, stores the data in a pandas DataFrame, and exports it to an Excel file.
