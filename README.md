@@ -38,7 +38,7 @@ This repository contains a collection of Python scripts for processing metadata 
 - **File**: [gis_compiler.py](gis_compiler.py)
 - **Description**: This script reads the general metadata text file generated in the first step and organises it into an Excel workbook. It includes styling for column headers and merges cells for better organisation.
 
-## Raster Metadata Script
+## Raster Metadata
 
 ### First Step
 
