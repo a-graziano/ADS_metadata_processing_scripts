@@ -1,7 +1,7 @@
 # Raster Metadata
 This script extracts metadata from photos and drawings and compiles it into an Excel spreadsheet. It also applies styling and formatting to the spreadsheet.
 
-## Dependancies
+## Dependencies
 ```bash
 os
 datetime
