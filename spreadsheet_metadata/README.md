@@ -1,6 +1,7 @@
 # Spreadsheet Metadata
 ## Table of Content
 - [Prerequisites](#prerequisites)
+- [Getting Started](#getting_started)
 
 The first Python script is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.
 The second Python script is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
