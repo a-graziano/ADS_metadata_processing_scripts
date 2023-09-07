@@ -67,9 +67,9 @@ This Python script is designed to generate an Excel spreadsheet containing metad
 
 1. Install the required Python libraries using the following command:
 
-   ```bash
-   pip install openpyxl
-   
+ ```bash
+ pip install openpyxl
+ ``` 
 #### Modify the script's configuration to suit your needs:
 
 2. Set the doc_folder variable to the path of the folder containing the spreadsheets you want to generate metadata for.
