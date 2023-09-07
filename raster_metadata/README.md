@@ -32,7 +32,7 @@ Captions are loaded from the captions.xlsx file.
 
 #### Reading Metadata:
 
-Metadata is extracted from the text files (metadata.txt and dwg_metadata.txt).
+Metadata is extracted from the text files (raster_metadata.txt and dwg_metadata.txt). The template is the same for both txt files.
 #### Creating Excel Workbook:
 
 An Excel workbook is created.
