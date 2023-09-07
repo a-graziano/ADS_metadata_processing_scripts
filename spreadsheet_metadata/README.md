@@ -1,4 +1,5 @@
 # Spreadsheet Metadata
+
 ## Table of Content
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting_started)
