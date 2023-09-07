@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# The URL of the organization's project page e.g "https://www.archaeologydataservice.ac.uk/library/browse/organisationDetails.xhtml?organisationId=1004881"
+# The URL of the organization's project page - e.g "https://www.archaeologydataservice.ac.uk/library/browse/organisationDetails.xhtml?organisationId=1004881"
 organizations = []
 
 # Create lists to store data
