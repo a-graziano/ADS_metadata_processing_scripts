@@ -1,36 +1,27 @@
-# Project Title
+# Projects Scraping
 
-Briefly describe what your project does.
-
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+This Python script scrapes project data from a list of organization URLs, processes it, and exports it to an Excel file.
 
 ## About the Project
 
-Explain in more detail what your project does. Give an overview of the purpose and functionality.
+This script uses `requests`, `BeautifulSoup`, and `pandas` to scrape project data from organization URLs. It then compiles the data into a pandas DataFrame and exports it to an Excel file.
 
 ## Getting Started
 
 ### Prerequisites
 
-List any dependencies or prerequisites needed to run the script. Include any external libraries or packages.
+Make sure you have the following Python libraries installed:
 
-For example, this project requires:
-- requests
-- BeautifulSoup
-- pandas
+- `requests`
+- `BeautifulSoup`
+- `pandas`
 
-### Installation
-
-Provide step-by-step instructions on how to install the required packages and dependencies.
+You can install them using the following command:
 
 ```bash
 pip install requests beautifulsoup4 pandas
+```
+### Usage
+```bash
+python projects_scraping.py
+```
