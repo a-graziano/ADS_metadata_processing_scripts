@@ -8,7 +8,7 @@ from PIL import Image
 photo_folder = ""
 
 # Path to the photo metadata text file
-metadata_file_path = os.path.join(photo_folder, "metadata.txt")
+metadata_file_path = os.path.join(photo_folder, "raster_metadata.txt")
 
 # Path to the dwg metadata text file
 dwg_file_path = os.path.join(photo_folder, "dwg_metadata.txt")
