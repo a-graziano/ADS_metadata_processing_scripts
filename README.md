@@ -47,7 +47,7 @@ This repository contains a collection of Python scripts for processing metadata 
 
 ### Second Step
 
-- **File**: [raster_compiler.py](raster_compiler.py.py)
+- **File**: [raster_compiler.py](raster_compiler.py)
 - **Description**: This script processes metadata from photos and DWG drawings, extracts information such as filenames, captions, keywords, periods, creators, and more. It creates an Excel workbook with organised metadata and applies styling to the column headers. To create the metadata file, it also uses the information relating to each individual file which is contained in another spreadsheet. Usually this is the File Name and Caption.
 
 
