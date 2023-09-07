@@ -9,17 +9,6 @@ This repository contains a collection of Python scripts for processing metadata 
 - [Raster Metadata](raster_metadata)
 - [Projects Scraping](projects_scraping)
 
-## Plain Text Document Metadata
-
-### First Step
-
-- **File**: [text_metatadata.txt](plain_text_document_metadata)
-- **Description**: This text file contains all the information relating to the document which will then be extracted and inserted into a spreadsheet after performing the next step
-
-### Second Step
-
-- **File**: [text_compiler.py](plain_text_document_metadata)
-- **Description**: This script processes metadata from plain text documents (PDF and Word) and organises it into an Excel workbook. It also extracts software information and handles different file types.
 
 ## GIS Shapefile Metadata
 
