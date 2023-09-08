@@ -10,11 +10,11 @@ This script extracts metadata from photos and drawings and compiles it into an E
 ### Dependencies
 
 ```bash
-os
-datetime
-openpyxl
-PIL
-
+import os
+import datetime
+import openpyxl
+import PIL
+```
 Set up the following variables in the script:
 
 1. photo_folder: Path to the folder containing the photos.
