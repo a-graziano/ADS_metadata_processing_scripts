@@ -69,16 +69,16 @@ This script is designed to generate metadata from a text file and organize it in
 3. Modify the `txt_file_path` variable in the script to point to your metadata text file.
 4. Customize the metadata information, such as software and version, to match your environment.
 5. Run the script:
-   ```bash
+```bash
 python gis_extractory.py
-  ```
+```
 4. Output
   General Metadata: The script will create a gis_metadata.txt file containing general information about the shapefiles in the specified directory.
 7. Set the name of the organization using the `organisation` variable in the compiler script. For example: organisation = "Your organisation name"
 8. Execute the script:
-   ```bash
-puthon gis_compiler.py
-    ```
+```bash
+python gis_compiler.py
+```
 9. The script will generate an Excel file named gis_metadata.xlsx containing the organized metadata.
 11. The Excel file is saved in the same directory as the shapefiles.
 
