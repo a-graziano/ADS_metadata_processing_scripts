@@ -61,13 +61,6 @@ python gis_compiler.py
 9. The script will generate an Excel file named gis_metadata.xlsx containing the organized metadata.
 11. The Excel file is saved in the same directory as the shapefiles.
 
-
-### Contributing
-Contributions are welcome! If you have suggestions, bug reports, or improvements, please open an issue or submit a pull request.
-
-### License
-This project is licensed under the MIT License.
-
 ### Acknowledgments
 This script was inspired by the need to extract metadata from shapefiles for geospatial analysis.
 Special thanks to the geopandas library for simplifying geospatial data manipulation.
