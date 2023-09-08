@@ -6,6 +6,7 @@ The [text_compiler.py](text_compiler.py) is designed to extract metadata from PD
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Text file](#text-file)
+- [Notes](#notes)
 
 ## Prerequisites
 
