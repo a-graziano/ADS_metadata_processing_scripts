@@ -18,7 +18,7 @@ This Python script is designed to extract metadata from shapefiles located in a 
 
    ```bash
    pip install geopandas
-
+   
 2. Clone or download the script to your local machine.
 
 ### Modify the script:
@@ -26,9 +26,9 @@ This Python script is designed to extract metadata from shapefiles located in a 
 1. Set the shapefile_directory variable to the path where your shapefiles are located.
 2. Customize the metadata information, such as software and version, to match your environment.
 3. Run the script:
-```bash
+  ```bash
 python gis_extractory.py
-```
+  ```
 4. Output
   General Metadata: The script will create a gis_metadata.txt file containing general information about the shapefiles in the specified directory.
 
@@ -71,12 +71,14 @@ This script is designed to generate metadata from a text file and organize it in
 5. Run the script:
    ```bash
 python gis_extractory.py
+  ```
 4. Output
   General Metadata: The script will create a gis_metadata.txt file containing general information about the shapefiles in the specified directory.
 7. Set the name of the organization using the `organisation` variable in the compiler script. For example: organisation = "Your organisation name"
 8. Execute the script:
    ```bash
 puthon gis_compiler.py
+    ```
 9. The script will generate an Excel file named gis_metadata.xlsx containing the organized metadata.
 11. The Excel file is saved in the same directory as the shapefiles.
 
