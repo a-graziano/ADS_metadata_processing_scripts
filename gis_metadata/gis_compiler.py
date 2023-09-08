@@ -6,7 +6,7 @@ from openpyxl.utils import get_column_letter
 # Path to the folder containing shapefiles
 doc_folder = ""
 
-# Get a list of PDF and Word document filenames in the folder
+# Get a list of shapefiles in the folder
 layer_filenames = []
 for filename in os.listdir(doc_folder):
     if filename.lower().endswith(('.shp', '.dbf', 'shx')):
