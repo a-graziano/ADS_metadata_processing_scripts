@@ -20,7 +20,7 @@ Set up the following variables in the script:
 1. photo_folder: Path to the folder containing the photos.
 2. metadata_file_path: Path to the photo metadata text file.
 3. dwg_file_path: Path to the dwg metadata text file.
-4. Ensure you have a captions spreadsheet named captions.xlsx with two columns: Filename and Caption.
+4. Ensure you have a captions spreadsheet named captions.xlsx with two columns: Filename and Caption(don't use any headers, just the filename and its caption)
 5. Run the script:
 ```bash
 python raster_compiler.py
