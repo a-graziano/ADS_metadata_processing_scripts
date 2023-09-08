@@ -2,44 +2,23 @@
 
 ## Table of Content
 - [Extractor script](#extractor-script)
-- [Attribute Tables](#attribute-tables)
 - [Sample Output](#sample-output)
 - [Compiler script](#compiler-script)
 - [Usage](#usage)
 
   
-## [Extractor script](gis_extractor.py) 
+### [Extractor script](gis_extractor.py) 
 
-This Python script is designed to extract metadata from shapefiles located in a specified directory. It generates both general metadata about the shapefiles and attribute tables for each shapefile's features.
-
-## Usage
-
-1. Install the required library:
-
-   ```bash
-   pip install geopandas
-   
-2. Clone or download the script to your local machine.
-
-### Modify the script:
-
-1. Set the shapefile_directory variable to the path where your shapefiles are located.
-2. Customize the metadata information, such as software and version, to match your environment.
-3. Run the script:
-  ```bash
-python gis_extractory.py
-  ```
-4. Output
-  General Metadata: The script will create a gis_metadata.txt file containing general information about the shapefiles in the specified directory.
-
-### Attribute Tables: 
-For each shapefile found, the script will create a separate <shapefile_name>_attributes.txt file containing attribute information for each feature.
-
+This Python script is designed to extract metadata from shapefiles located in a specified directory. It generates both general metadata about the shapefiles and attribute tables for each shapefile's features, 1 attributes.txt file for each shapefiles and 1 gis_metadata.txt for all the shapefiles inside the directory.
+```bash
+<shapefile_name>_attributes.txt
+gis_metadata.txt
+```
 #### Sample Output
-For each shapefile, the script will generate metadata like:
+For each shapefile, the script will generate inside the gis_metadata.txt the information showed below:
 
 Name<br>
-CRS (Coordinate Reference System)<br>
+CRS (Coordinate Reference System)<br> the script automatically assing the value OSGB-36
 Geometry Type<br>
 Number of Features<br>
 Start Date (Creation Date)<br>
@@ -47,13 +26,13 @@ End Date (Last Modification Date)<br>
 Software and Version<br>
 
 
-# [Compiler script](gis_compiler.py)
+### [Compiler script](gis_compiler.py)
 
 This script is designed to generate metadata from a text file and organize it into an Excel spreadsheet for GIS data. It also extracts specific information from shapefiles and populates the spreadsheet with relevant data.
 
 ## Usage
 
-## Dependencies
+### Dependencies
 1. Install the required library:
 
    ```bash
