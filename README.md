@@ -9,19 +9,6 @@ This repository contains a collection of Python scripts for processing metadata 
 - [Raster Metadata](raster_metadata)
 - [Projects Scraping](projects_scraping)
 
-
-## GIS Shapefile Metadata
-
-### First Step
-
-- **File**: [gis_extractor.py](gis_metadata)
-- **Description**: This script processes metadata from GIS shapefiles, including attribute data and general information. It creates separate attribute tables for each shapefile and compiles general metadata into a text file.
-
-### Second Step
-
-- **File**: [gis_compiler.py](gis_metadata)
-- **Description**: This script reads the general metadata text file generated in the first step and organises it into an Excel workbook. It includes styling for column headers and merges cells for better organisation.
-
 ## Raster Metadata
 
 ### First Step
