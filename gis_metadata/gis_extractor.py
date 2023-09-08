@@ -3,7 +3,7 @@ import os
 import datetime
 
 # Directory where the shapefiles are located
-shapefile_directory = "/Users/agraziano/Desktop/metadata_raster_script/Final_script/GIS"
+shapefile_directory = ""
 
 # Get a list of all .shp files in the directory
 shapefile_paths = [os.path.join(shapefile_directory, filename) for filename in os.listdir(shapefile_directory) if filename.endswith(".shp")]
