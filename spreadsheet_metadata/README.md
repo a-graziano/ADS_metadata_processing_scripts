@@ -2,7 +2,6 @@
 
 ## Table of Content
 - [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Script Explanation](#script-explanation)
 - [Example Output](#example-output)
@@ -19,9 +18,7 @@ Before running the script, make sure you have Python installed on your system. Y
 pip install openpyxl
 ```
 
-## Getting Started
-
-### Usage
+## Usage
 1. Clone the repository or download the script files to your local machine.
 2. Update the excel_files list in the script with the paths of the Excel files you want to process.
 3. Run the script:
