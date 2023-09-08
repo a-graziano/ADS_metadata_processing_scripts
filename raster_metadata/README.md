@@ -29,7 +29,10 @@ python raster_compiler.py
 7. The Excel file is saved in the photo folder as raster_metadata.xlsx.
 
 ## Important Notes
-Ensure the paths are correctly set for photo_folder, metadata_file_path, and dwg_file_path.
-Make sure you have a captions spreadsheet named captions.xlsx with columns Filename and Caption.
-The script assumes that metadata in the text files is formatted as key-value pairs, e.g., Key: Value.
-The script creates a new Excel workbook with the metadata.
+<ul>
+  <li>Ensure the paths are correctly set for photo_folder, metadata_file_path, and dwg_file_path.</li>
+  <li>Make sure you have a captions spreadsheet named captions.xlsx with columns Filename and Caption.</li>
+<li>The script assumes that metadata in the text files is formatted as key-value pairs, e.g., Key: Value.</li>
+<li>The script creates a new Excel workbook with the metadata.</li>
+</ul>
+
