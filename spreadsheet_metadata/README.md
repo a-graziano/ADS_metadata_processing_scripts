@@ -6,7 +6,7 @@
 - [Usage](#usage)
 - [Script Explanation](#script-explanation)
 - [Example Output](#example-output)
-- [Configuration](#configuration)
+- [Compiler script](#compiler-script)
 
 The [spreadsheet_extractor script](spreadsheet_extractor.py) is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.<br>
 The [spreadsheet_compiler script](spreadhseet_compiler.py) is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
@@ -64,7 +64,7 @@ Sheet Name: Data</br>
 Number of rows: 50</br>
 </br>
 
-### Configuration
+### Compiler script
 #### Modify the script's configuration to suit your needs:
 
 1. Set the doc_folder variable to the path of the folder containing the spreadsheets you want to generate metadata for.
