@@ -1,6 +1,6 @@
 # Projects Scraping
 
-This Python script scrapes project data from a list of organization URLs, processes it, and exports it to an Excel file.
+This Python script scrapes project name from a specific organization URLs, processes it, and exports it to an Excel file.
 
 ## About the Project
 
