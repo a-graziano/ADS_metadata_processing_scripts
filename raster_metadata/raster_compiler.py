@@ -8,7 +8,7 @@ from PIL import Image
 photo_folder = ""
 
 # Path to the photo metadata text file
-metadata_file_path = os.path.join(photo_folder, "raster_metadata.txt")
+metadata_file_path = os.path.join(photo_folder, "metadata.txt")
 
 # Path to the dwg metadata text file
 dwg_file_path = os.path.join(photo_folder, "dwg_metadata.txt")
@@ -26,7 +26,7 @@ drawings = [f for f in os.listdir(photo_folder) if f.lower().endswith(('.png'))]
 current_date = datetime.datetime.now().strftime("%d/%m/%Y")
 
 # Name of the organisation
-organisation = ""
+organisation = "Museum of London Archaeology - Bristol"
 
 # Create a dictionary to store filenames and corresponding captions
 captions_dict = {}
@@ -42,8 +42,8 @@ with open(metadata_file_path, 'r') as metadata_file:
         if ": " in line:
             key, value = line.strip().split(": ", 1)
             metadata[key] = value
-            
-            
+
+
 # Read dwg metadata from the text file
 metadata_dwg = {}
 with open(dwg_file_path, 'r') as dwg_metadata_file:
@@ -63,9 +63,10 @@ sheet["A1"] = "Filename"
 sheet["B1"] = "Caption"
 sheet["C1"] = "Subject Keyword 1"
 sheet["D1"] = "Subject Keyword 2"
+sheet["E1"] = "Subject Keyword 3"
 sheet["F1"] = "Period Term 1 (MIDAS)"
 sheet["G1"] = "Period Term 2 (MIDAS)"
-sheet["H1"] = "Period Term 3 (MIDAS)"
+sheet["H1"] = "Period Term 3 (Other)"
 sheet["I1"] = "Period Start Date (BC date should be prefixed using a minus symbol)."
 sheet["J1"] = "Period End Date (BC date should be prefixed using a minus symbol)."
 sheet["K1"] = "Creator First Name"
@@ -94,27 +95,38 @@ for cell in sheet[1]:
    cell.fill = header_fill
    cell.font = header_font
    cell.alignment = header_alignment
-   
+
 red_row_fill = PatternFill(start_color="FF0000", end_color="FF0000", fill_type="solid")  # Red color
 red_row = sheet.row_dimensions[2]
 red_row.height = 4  # Set the height of the red-colored row to 4 units
 for cell in sheet[2]:
     cell.fill = red_row_fill
 
-    
+
 # Loop through each photo and extract information
 for row, photo_file in enumerate(photo_files, start=3):
     photo_path = os.path.join(photo_folder, photo_file)
     img = Image.open(photo_path)
+
     camera_model = img._getexif().get(272, "N/A")  # 272 corresponds to the camera make and model
     software = img._getexif().get(305, "N/A")  # 305 corresponds to the software used
+    creation_date = img._getexif().get(36867, "N/A") # 36867 corresponds to the creation date
+    
+    if creation_date != "N/A":
+        date_object = datetime.datetime.strptime(creation_date, "%Y:%m:%d %H:%M:%S")
+        formatted_date = date_object.strftime("%d/%m/%Y")
+    else:
+        formatted_date = "N/A"   
+
     sheet[f"A{row}"] = photo_file
     caption = captions_dict.get(photo_file, "")  # Get caption from captions_dict
     sheet[f"B{row}"] = caption
     print(f"Filename: {photo_file}, Caption: {caption}")  # Debugging print statement
-    
+
+
     sheet[f"C{row}"] = metadata.get("SubjectKeyword1", "")
     sheet[f"D{row}"] = metadata.get("SubjectKeyword2", "")
+    sheet[f"E{row}"] = metadata.get("SubjectKeyword3", "")
     sheet[f"F{row}"] = metadata.get("PeriodTerm1", "")
     sheet[f"G{row}"] = metadata.get("PeriodTerm2", "")
     sheet[f"H{row}"] = metadata.get("PeriodTerm3", "")
@@ -131,9 +143,11 @@ for row, photo_file in enumerate(photo_files, start=3):
     sheet[f"S{row}"] = metadata.get("Latitude", "")
     sheet[f"T{row}"] = metadata.get("Easting", "")
     sheet[f"U{row}"] = metadata.get("Northing", "")
-    sheet[f"V{row}"] = current_date
+    sheet[f"V{row}"] = formatted_date
+
     sheet[f"W{row}"] = camera_model
     sheet[f"X{row}"] = software
+
     sheet[f"Y{row}"] = "English"
 
 # Starting row for DWG loop (right after the photo loop)
@@ -147,9 +161,10 @@ for row, drawing_file in enumerate(drawings, start=start_row_dwg):
     caption = captions_dict.get(drawing_file, "")  # Get caption from captions_dict
     sheet[f"B{row}"] = caption
     print(f"Filename: {drawing_file}, Caption: {caption}")  # Debugging print statement
-    
+
     sheet[f"C{row}"] = metadata_dwg.get("SubjectKeyword1", "")
     sheet[f"D{row}"] = metadata_dwg.get("SubjectKeyword2", "")
+    sheet[f"E{row}"] = metadata.get("SubjectKeyword3", "")
     sheet[f"F{row}"] = metadata_dwg.get("PeriodTerm1", "")
     sheet[f"G{row}"] = metadata_dwg.get("PeriodTerm2", "")
     sheet[f"H{row}"] = metadata_dwg.get("PeriodTerm3", "")
@@ -168,7 +183,6 @@ for row, drawing_file in enumerate(drawings, start=start_row_dwg):
     sheet[f"U{row}"] = metadata_dwg.get("Northing", "")
     sheet[f"V{row}"] = current_date
     sheet[f"Y{row}"] = "English"
-
 
 
 # Save the Excel file
