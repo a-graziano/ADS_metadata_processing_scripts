@@ -22,7 +22,11 @@ You can install them using the following command:
 pip install requests beautifulsoup4 pandas
 ```
 ### Usage
+
+Search for the organization where you want to find projects on the [ADS website](https://archaeologydataservice.ac.uk/library/browse/organisations.xhtml).  Be careful, as one organization could have multiple names, which means you'll need to add multiple URLs.
+
+Run the script
+
 ```bash
 python projects_scraping.py
 ```
-
