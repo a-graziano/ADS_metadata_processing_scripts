@@ -1,20 +1,35 @@
 # Raster Metadata
 This script extracts metadata from photos and drawings and compiles it into an Excel spreadsheet. It also applies styling and formatting to the spreadsheet.
 
-## Table of Content
+<details>
+
+<summary>Table of Contents</summary>
+
+- [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Important Notes](#important-notes)
 
-## Usage
+</details>
 
-### Dependencies
+
+## Prerequisites
+
+Before running the script, make sure you have the following Python libraries installed:
+
+- DateTime
+- python-docx
+- openpyxl
+- Pillow (PIL)
+
+You can install these libraries using pip:
 
 ```bash
-import os
-import datetime
-import openpyxl
-import PIL
+pip install DateTime python-docx openpyxl Pillow
 ```
+
+
+### Usage
+
 Set up the following variables in the script:
 
 1. photo_folder: Path to the folder containing the photos.
