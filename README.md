@@ -20,21 +20,21 @@
 ### Contributing
 Contributions are welcome! If you have suggestions, bug reports, or improvements, please open an issue or submit a pull request.
 
-### [Spreadsheet](spreadsheet.md)
+
+### [Raster](raster_metadata)
+
+This script extract metadata from photos using the exif tags and from the drawings (usually permatraces in .png format) and compiles it into an Excel spreadsheet. It also applies styling and formatting to the spreadsheet following the ADS template. The text_compiler.py is designed to extract metadata from PDF and Word documents from a specified folder and create an Excel spreadsheet (ADS template) with the extracted information. It also extracts software information from these documents and populates the spreadsheet with it.
+
+### [Spreadsheet](spreadsheet_metadata)
 
 The spreadsheet_extractor script is designed to process Excel files using the openpyxl library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.
 The spreadsheet_compiler script is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
 
-
-### [Raster](raster.md)
-
-This script extract metadata from photos using the exif tags and from the drawings (usually permatraces in .png format) and compiles it into an Excel spreadsheet. It also applies styling and formatting to the spreadsheet following the ADS template. The text_compiler.py is designed to extract metadata from PDF and Word documents from a specified folder and create an Excel spreadsheet (ADS template) with the extracted information. It also extracts software information from these documents and populates the spreadsheet with it.
-
-### [Plain Text Document](text.md)
+### [Plain Text Document](plain_text_document_metadata)
 
 The text_compiler.py is designed to extract metadata from PDF and Word documents from a specified folder and create an Excel spreadsheet (ADS template) with the extracted information. It also extracts software information from these documents and populates the spreadsheet with it. This Python script scrapes project name from a specific organization URLs, processes it, and exports it to an Excel file.
 
-### [GIS (.shp)](gis.md)
+### [GIS (.shp)](gis_metadata)
 
 This Python script is designed to extract metadata from shapefiles located in a specified directory. It generates both general metadata about the shapefiles and attribute tables for each shapefile's features, 1 attributes.txt file for each shapefiles and 1 gis_metadata.txt for all the shapefiles inside the directory.
 ```bash
@@ -42,6 +42,6 @@ This Python script is designed to extract metadata from shapefiles located in a 
 gis_metadata.txt
 ```
 
-### [Projects Scraping](scraping.md)
+### [Projects Scraping](projects_scraping)
 
 This Python script scrapes project name from a specific organization URLs, processes it, and exports it to an Excel file.
