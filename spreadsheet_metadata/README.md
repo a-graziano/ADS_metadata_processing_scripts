@@ -1,14 +1,19 @@
 # Spreadsheet Metadata
 
-## Table of Content
+<details>
+
+<summary>Table of Contents</summary>
+
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Script Explanation](#script-explanation)
 - [Example Output](#example-output)
 - [Compiler script](#compiler-script)
 
-The [spreadsheet_extractor script](spreadsheet_extractor.py) is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.<br>
-The [spreadsheet_compiler script](spreadhseet_compiler.py) is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
+</details>
+
+The [spreadsheet_extractor script](https://github.com/a-graziano/ADS_metadata_processing_scripts/blob/main/spreadsheet_metadata/spreadsheet_extractor.py) is designed to process Excel files using the `openpyxl` library. It extracts metadata about the workbook, counts the number of non-empty rows in each sheet, and also extracts header names from the first sheet.<br>
+The [spreadsheet_compiler script](https://github.com/a-graziano/ADS_metadata_processing_scripts/blob/main/spreadsheet_metadata/spreadsheet_compiler.py) is designed to generate an Excel spreadsheet containing metadata for a collection of documents. It reads metadata information from a text file and organizes it into columns in an Excel file.
 
 ### Prerequisites
 
@@ -36,7 +41,7 @@ python spreadsheet_extractor.py
 </ul>
 
 ### Example output
-Excel File: /Users/agraziano/Desktop/metadata_raster_script/Final_script/spreadsheet/LP4528B Context Reg.xlsx</br>
+Excel File: file path</br>
 Title: Excel Title</br>
 Description: Excel Description</br>
 Creator: Excel Creator</br>
@@ -49,7 +54,7 @@ Number of rows: 100</br>
 
 ...
 
-Excel File: /Users/agraziano/Desktop/metadata_raster_script/Final_script/spreadsheet/LP4528B Feature List.xlsx</br>
+Excel File: file path</br>
 Title: Feature List Title</br>
 Description: Feature List Description</br>
 Creator: Feature List Creator</br>
