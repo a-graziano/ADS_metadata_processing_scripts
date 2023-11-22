@@ -1,0 +1,6 @@
+- [Home](README.md)
+- [Raster](raster.md)
+- [Spreadsheet](spreadsheet.md)
+- [Plain Text Document](text.md)
+- [GIS (.shp)](gis.md)
+- [Projects Scraping](scraping.md)
