@@ -1,12 +1,17 @@
 # Plain Text Document Metadata
 
-The [text_compiler.py](text_compiler.py) is designed to extract metadata from PDF and Word documents in a specified folder and create an Excel spreadsheet with the extracted information. It also extracts software information from these documents and populates the spreadsheet with it.
+The [text_compiler.py](https://github.com/a-graziano/ADS_metadata_processing_scripts/blob/main/plain_text_document_metadata/text_compiler.py) is designed to extract metadata from PDF and Word documents in a specified folder and create an Excel spreadsheet with the extracted information. It also extracts software information from these documents and populates the spreadsheet with it.
 
-## Table of Content
+<details>
+
+<summary>Table of Contents</summary>
+
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Text file](#text-file)
 - [Notes](#notes)
+
+</details>
 
 ## Prerequisites
 
@@ -36,7 +41,7 @@ The script will generate an Excel file named text_metadata.xlsx in the same fold
 This file will contain the extracted metadata and software information.
 
 ### Text file
-The [.txt file](metadata.txt) will have the following column headers:<br>
+The [.txt file](https://github.com/a-graziano/ADS_metadata_processing_scripts/blob/main/plain_text_document_metadata/metadata.txt) will have the following column headers:<br>
 
 Title:<br>
 Abstract: <br>
@@ -60,4 +65,3 @@ Software Version:<br>
 ### Notes
 Make sure to review and adjust the script according to your specific requirements and the format of your metadata text file.
 This script may require additional configuration or adjustments based on the structure and content of your documents.
-
