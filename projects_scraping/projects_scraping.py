@@ -7,18 +7,14 @@ organizations = []
 
 # Create lists to store data
 data = {"Organization": [], "Project": []}
-for url in organizations:
-    # Send a GET request to the organization's URL
-    response = requests.get(url)
 
-    # Parse the HTML content of the page using BeautifulSoup
+for url in organizations:
+    response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # Find the <td> element containing the organization name
+    # Find the organization name within the td tag, handle NoneType
     organization_td = soup.find("td", string=True)
-
-    # Extract the organization name from the <td> element
-    organization_name = organization_td.get_text(strip=True)
+    organization_name = organization_td.get_text(strip=True) if organization_td else "Unknown"
 
     # Find all <a> elements for project titles
     project_links = soup.find_all("a", title=True)
